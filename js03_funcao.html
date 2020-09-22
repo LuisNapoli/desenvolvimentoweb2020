@@ -7,6 +7,14 @@
 </head>
 <body>
     <h3>Somatória de dois numeros inteiros</h3>
+    <!-- Definição da área e dos elementos de um Formulário -->
+    <form name = "MeuFormulario" action=" " method="POST">
+        Entre com o valor 1: <input type="text" name="f_n1" /><p></p>
+        Entre com o valor 2: <input type="text" name="f_n2" /><p></p>
+        <input type="button" name= "btn_somar" value="Somar" onclick="soma()"/>
+        <input type="reset" name="btn_apagar" value="Apagar"/>
+    </form>
+        
     <script>
         /* Objetivo: Desenvolver um programa em JS que faça a leitura de 2 numeros inteirso aplique a conversão de valores com
         parseInt e apresente o resultado da soma entre eles.
@@ -21,6 +29,7 @@
         function soma(){
             /* Entrada de Dados*/
             js_n1 = parseInt(document.MeuFormulario.f_n1.value);
+            js_n2 = praseInt(document.MeuFormulario.f_n2.value);
         }
     </script>
 </body>
